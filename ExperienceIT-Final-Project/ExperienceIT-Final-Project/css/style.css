@@ -1,0 +1,28 @@
+.color-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color:green;
+}
+.student-form {
+    padding: 20px; padding-bottom: 15px
+}
+
+.student-form label {
+    display: block
+}
+
+.student-form textarea {
+    padding: 8px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.messageOfDay {
+    width:100%;
+}
+
+.carousel-inner > .carousel-item > img {
+    width: 640px;
+    height: 260px;
+}
