@@ -13,5 +13,18 @@ namespace ExperienceIT_Final_Project.Controllers
         {
             return View();
         }
+
+        public ActionResult AllAssignments()
+        {
+            return View();
+        }
+        public ActionResult StudentMentor()
+        {
+            return View();
+        }
+        public ActionResult StudentCalendar()
+        {
+            return View();
+        }
     }
 }

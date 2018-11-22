@@ -22,7 +22,25 @@
     width:100%;
 }
 
-.carousel-inner > .carousel-item > img {
-    width: 640px;
-    height: 260px;
+
+.carousel-item .img{
+    height:500px;
+}
+
+#UncompletedAssignments {
+    float: left;
+    width: 33%;
+}
+
+#UnAssignments {
+    height:200px;
+}
+
+#CompletedAssignments {
+    float: Right;
+    width: 33%;
+}
+
+#ComAssignments {
+    height: 200px;
 }
