@@ -1,3 +1,11 @@
+.main-page {
+    background-color:orange;
+}
+
+.header-img {
+    width:100%;
+    height: 300px;
+}
 .color-box {
     width: 100px;
     height: 100px;
@@ -23,8 +31,8 @@
 }
 
 
-.carousel-item .img{
-    height:500px;
+.carousel-inner .carousel-item img{
+    height:400px;
 }
 
 #UncompletedAssignments {
@@ -33,7 +41,7 @@
 }
 
 #UnAssignments {
-    height:200px;
+    height:500px;
 }
 
 #CompletedAssignments {
@@ -42,5 +50,10 @@
 }
 
 #ComAssignments {
-    height: 200px;
+    height: 500px;
+}
+
+.p-box {
+    height:400px;
+    position:relative;
 }
