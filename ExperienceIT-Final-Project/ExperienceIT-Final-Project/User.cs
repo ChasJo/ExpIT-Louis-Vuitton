@@ -8,7 +8,7 @@ namespace ExperienceIT_Final_Project
 {
     public abstract class User
     {
-        [StringLength(60, MinimumLength = 3)]
+        
         public int Id { get; set; }
         [Display(Name = "Enter Name")]
         public string Name{ get; set; }
