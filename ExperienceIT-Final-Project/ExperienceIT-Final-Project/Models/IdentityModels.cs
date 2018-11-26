@@ -1,7 +1,6 @@
 ﻿using System.Data.Entity;
 using System.Security.Claims;
 using System.Threading.Tasks;
-using ExperienceIT_Final_Project.Views.Student;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -20,8 +19,7 @@ namespace ExperienceIT_Final_Project.Models
     }
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    {    
-        public DbSet<Student> Students { get; set; }
+    {
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
