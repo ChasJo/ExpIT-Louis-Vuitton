@@ -219,6 +219,10 @@
     <Compile Include="Views\Student\Student.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-ExperienceIT-Final-Project-20181121070201.mdf" />
+    <Content Include="App_Data\aspnet-ExperienceIT-Final-Project-20181121070201_log.ldf">
+      <DependentUpon>aspnet-ExperienceIT-Final-Project-20181121070201.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -328,9 +332,7 @@
     <Content Include="Views\Shared\_LayoutStudent.cshtml" />
     <Content Include="Views\Assignments\Index.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
