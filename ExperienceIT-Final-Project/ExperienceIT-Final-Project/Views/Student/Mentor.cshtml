@@ -5,7 +5,12 @@
 }
 
 <h2>Mentors</h2>
-
+@if (!Model.Any())
+{
+    <p>We don't have any mentors yet.</p>
+}
+else
+{
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
@@ -16,13 +21,15 @@
         <tbody>
             @foreach (var mentor in Model)
             {
-            <tr>
-                <!--<td>""Html.ActionLink(mentor.Name, "mentorDetails", "Students", new { id = mentor.Id }, null)</td>-->
-                <td>@mentor.Email</td>
-            </tr>
+                <tr>
+                    <td>@Html.ActionLink(mentor.Name, "mentorDetails", "Students", new { id = mentor.Id }, null)</td>
+                    <td>@mentor.Email</td>
+                </tr>
             }
         </tbody>
     </table>
 }
+
+
 
 

@@ -1,5 +1,6 @@
 namespace ExperienceIT_Final_Project.Migrations
 {
+    using ExperienceIT_Final_Project.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -23,6 +24,7 @@ namespace ExperienceIT_Final_Project.Migrations
             
             context.Students.Add(new Student { Name = "a", Password = "a", Username = "a", LastAssignment = 0});
             context.Assignments.Add(new Assignment { Id = 0, DueDate = "11/1/18", Name = "Assignment 1", Description = "This is a test" });
+            context.Mentors.Add( new Mentor { Id = 1, FirstName ="Rich", LastName =" ", Email="something@yahoo.com", PhoneNumber= "5555555555" } );
         }
     }
 }

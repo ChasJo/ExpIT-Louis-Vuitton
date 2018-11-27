@@ -200,6 +200,10 @@
     <Compile Include="Migrations\201811272250581_madeAssignments.Designer.cs">
       <DependentUpon>201811272250581_madeAssignments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811272346138_madeMentor.cs" />
+    <Compile Include="Migrations\201811272346138_madeMentor.Designer.cs">
+      <DependentUpon>201811272346138_madeMentor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AssignmentsController.cs" />
@@ -239,10 +243,12 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="css\AboutStyles.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="img\CrainsDet.jpg" />
     <Content Include="img\expit1.png" />
     <Content Include="img\expit2.png" />
     <Content Include="ApplicationInsights.config">
@@ -337,11 +343,10 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Student\AllAssignments.cshtml" />
-    <Content Include="Views\Shared\Calendar.cshtml" />
-    <Content Include="Views\Student\StudentMentor.cshtml" />
     <Content Include="Views\Shared\_LayoutStudent.cshtml" />
     <Content Include="Views\Assignments\Index.cshtml" />
     <Content Include="Views\Student\mentorDetails.cshtml" />
+    <Content Include="Views\Student\Mentor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -369,6 +374,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811272250581_madeAssignments.resx">
       <DependentUpon>201811272250581_madeAssignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811272346138_madeMentor.resx">
+      <DependentUpon>201811272346138_madeMentor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
