@@ -18,6 +18,9 @@ namespace ExperienceIT_Final_Project.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+
+
+            context.Students.Add(new Student { Name = "a", Password = "a", Username = "a" });
         }
     }
 }
