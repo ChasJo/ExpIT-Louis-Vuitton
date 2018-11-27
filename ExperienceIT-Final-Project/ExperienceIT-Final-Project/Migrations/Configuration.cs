@@ -20,7 +20,9 @@ namespace ExperienceIT_Final_Project.Migrations
             //  to avoid creating duplicate seed data.
 
 
-            context.Students.Add(new Student { Name = "a", Password = "a", Username = "a" });
+            
+            context.Students.Add(new Student { Name = "a", Password = "a", Username = "a", LastAssignment = 0});
+            context.Assignments.Add(new Assignment { Id = 0, DueDate = "11/1/18", Name = "Assignment 1", Description = "This is a test" });
         }
     }
 }

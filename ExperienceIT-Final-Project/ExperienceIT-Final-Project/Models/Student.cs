@@ -8,10 +8,14 @@ namespace ExperienceIT_Final_Project
 {
     public class Student : User
     {
+        public int LastAssignment { get; set; }
+
 
         public List<Assignment> assignmentList = new List<Assignment>();
 
-        public Student() { }
+        public Student() {
+            
+        }
 
         public void Submitassignment()
         {

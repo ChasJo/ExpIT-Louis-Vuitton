@@ -57,3 +57,8 @@
     height:400px;
     position:relative;
 }
+.block {
+    padding: 5px;
+    float: left;
+    width: 33%;
+}

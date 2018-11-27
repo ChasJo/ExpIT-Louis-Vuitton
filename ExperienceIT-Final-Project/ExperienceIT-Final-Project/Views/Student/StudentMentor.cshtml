@@ -1,10 +1,28 @@
 ﻿
 @{
-    ViewBag.Title = "StudentMentor";
+    ViewBag.Title = "Mentor";
+    Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 }
 
 <h2>Mentors</h2>
 
-
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Mentor</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mentor in Model)
+            {
+            <tr>
+                <!--<td>""Html.ActionLink(mentor.Name, "mentorDetails", "Students", new { id = mentor.Id }, null)</td>-->
+                <td>@mentor.Email</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
 
 
