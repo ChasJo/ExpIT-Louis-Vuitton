@@ -8,7 +8,7 @@ namespace ExperienceIT_Final_Project.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.AspNetRoles" ,
+                "dbo.AspNetRoles",
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
