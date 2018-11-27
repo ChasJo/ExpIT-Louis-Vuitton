@@ -14,10 +14,10 @@ namespace ExperienceIT_Final_Project.Controllers
         {
             var assignmentsA = new Assignments() { Name = "Module A", Url = "https://docs.google.com/document/d/1ycp4FkvOyqjUfpXYJ18GZnGFw5OcjGD5nmhUEthJOgQ/edit"};
             var assignmentsB = new Assignments() { Name = "Module B", Url = "https://docs.google.com/document/d/1FtrJw3JOTcxbuCWFJzxRReLFvuNq5TXZIC5hhnm-rYw/edit" };
-            var assignmentsC = new Assignments() { Name = "Module C" };
-            var assignmentsD = new Assignments() { Name = "Module D" };
-            var assignmentsE = new Assignments() { Name = "Module E" };
-            var assignmentsF = new Assignments() { Name = "Module F" };
+            var assignmentsC = new Assignments() { Name = "Module C"};
+            var assignmentsD = new Assignments() { Name = "Module D"};
+            var assignmentsE = new Assignments() { Name = "Module E"};
+            var assignmentsF = new Assignments() { Name = "Module F"};
 
             var Assignments = new List<Assignments>();
             Assignments.Add(assignmentsA);

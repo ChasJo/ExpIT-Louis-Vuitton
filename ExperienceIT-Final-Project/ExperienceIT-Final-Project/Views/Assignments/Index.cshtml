@@ -1,15 +1,16 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
-
+    
 <h2>Assignments</h2>
 @{
-    foreach (var assignment in ViewBag.Assignments)
-    {
-     
-        <a href="@assignment.Url">@assignment.Name</a>
-    }
+        foreach (var assignment in ViewBag.Assignments)
+        {
+
+        <a href = "@assignment.Url" > @assignment.Name </a><br/>
+                }
+
 }
 
