@@ -1,17 +1,10 @@
-﻿
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Mentor>
 @{
     ViewBag.Title = "Mentor";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 }
-
 <h2>Mentors</h2>
-@if (!Model.Any())
-{
-    <p>We don't have any mentors yet.</p>
-}
-else
-{
-    <table class="table table-bordered table-hover">
+ <table class="table table-bordered table-hover">
         <thead>
             <tr>
                 <th>Mentor</th>
@@ -19,17 +12,17 @@ else
             </tr>
         </thead>
         <tbody>
+            
+           
             @foreach (var mentor in Model)
             {
-                <tr>
-                    <td>@Html.ActionLink(mentor.Name, "mentorDetails", "Students", new { id = mentor.Id }, null)</td>
-                    <td>@mentor.Email</td>
-                </tr>
+            <tr>
+                <td>@Html.ActionLink(mentor.FirstName, "mentorDetails", "Students", new { id = mentor.Id }, null)</td>
+                <td>@mentor.Email</td>
+            </tr>
             }
         </tbody>
     </table>
-}
-
 
 
 
