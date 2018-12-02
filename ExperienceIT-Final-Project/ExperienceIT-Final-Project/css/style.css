@@ -1,10 +1,16 @@
 .main-page {
-    background-color:orange;
-}
+
+    margin:auto;
+
+}#nav-img {
+     margin-right: 60px;
+     height: 80%;
+     width: 40%;
+ }
 
 .header-img {
-    width:100%;
-    height: 300px;
+    width:50%;
+    height: 100px;
 }
 .color-box {
     width: 100px;
@@ -55,11 +61,41 @@
 }
 
 .p-box {
-    height:400px;
-    position:relative;
+    border-color: orange;
+    border-style: groove;
 }
 .block {
     padding: 5px;
     float: left;
     width: 33%;
+}
+.container2 {
+    display: flex;
+    flex-direction: row;
+    width: 11.5in;
+    border: 7px dotted #1C6EA4;
+}
+.container-item {
+    padding: 10px;
+}
+.nav-link{
+    font-size: 18px;
+}
+.nav-align{
+    padding-left: 420px
+}
+.carousel-item{
+    text-align: center;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.carousel-control-next-icon {
+    background-color: black;
+}
+.orange-box {
+    border-color: orange;
+    border-style: solid;
+    padding: 20px;
+    font-size: 20px;
 }
