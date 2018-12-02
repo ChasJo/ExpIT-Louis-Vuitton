@@ -23,6 +23,7 @@ namespace ExperienceIT_Final_Project.Models
         public DbSet<Student>Students { get; set; }
         public DbSet<Assignment> Assignments { get; set; }
         public DbSet<Mentor> Mentors { get; set; }
+        public DbSet<CompletedAssignment> CompletedAssignments { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

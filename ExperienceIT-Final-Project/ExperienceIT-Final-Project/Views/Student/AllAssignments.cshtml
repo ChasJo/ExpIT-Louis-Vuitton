@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Assignment>
 @{
     ViewBag.Title = "AllAssignments";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
@@ -12,7 +12,12 @@
 <div class="block">
     <label>Uncompleted Assignments</label>
     <br />
-    <textarea id="UnAssignments"></textarea>
+    <textarea id="UnAssignments">
+@foreach (var assign in Model)
+{
+    @assign.Name
+}
+</textarea>
 </div>
 <div class="block">
     <label>Set Assignment as Complete</label>

@@ -1,21 +1,21 @@
-﻿
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Student>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 }
 <link rel="stylesheet" href="../css/style.css" />
-<h2>Welcome Name</h2>
+<h2>Welcome </h2>
 <br />
 
-    
-    <textarea class="messageOfDay" name="messageOfDay" placeholder="This will be the Message of the Day" readonly></textarea>
+
+<textarea class="messageOfDay" name="messageOfDay" placeholder="This will be the Message of the Day" readonly></textarea>
 
 
 <form class="student-form">
     <div>
         <label>Last Assignment Completed</label>
         <textarea placeholder="this will list the last assignment completed"></textarea>
-        <br />  
+        <br />
         <label> Current Assignment</label>
         <textarea placeholder="This will list the current assignment"></textarea>
         <br />

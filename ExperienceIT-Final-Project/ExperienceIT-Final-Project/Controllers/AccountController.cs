@@ -79,7 +79,27 @@ namespace ExperienceIT_Final_Project.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    return RedirectToLocal(returnUrl);
+                    if (User.IsInRole("student"))
+                    {
+                        Console.WriteLine("student");
+                        return Redirect("~/student/index");
+                    }
+                    else if (User.IsInRole("mentor"))
+                    {
+                        Console.WriteLine("mentor");
+                        return Redirect("~/mentor/index");
+                    }
+                    else if (User.IsInRole("instructor"))
+                    {
+                        Console.WriteLine("instructor");
+                        return Redirect("~/instructor/index");
+                    }
+                    else
+                    {
+                        Console.WriteLine("not in a role");
+                        return RedirectToLocal(returnUrl);
+                    }
+                        
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
@@ -124,6 +144,7 @@ namespace ExperienceIT_Final_Project.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
+                    Console.WriteLine("qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq");
                     return RedirectToLocal(model.ReturnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
@@ -333,6 +354,7 @@ namespace ExperienceIT_Final_Project.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
+                    Console.WriteLine("11111111111111111");
                     return RedirectToLocal(returnUrl);
                 case SignInStatus.LockedOut:
                     return View("Lockout");
