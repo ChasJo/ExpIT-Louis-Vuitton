@@ -79,19 +79,19 @@ namespace ExperienceIT_Final_Project.Controllers
             switch (result)
             {
                 case SignInStatus.Success:
-                    if (User.IsInRole("student"))
+                    if (User.IsInRole("3"))
                     {
                         Console.WriteLine("student");
                         return Redirect("~/student/index");
                     }
-                    else if (User.IsInRole("mentor"))
+                    else if (User.IsInRole("2"))
                     {
                         Console.WriteLine("mentor");
                         return Redirect("~/mentor/index");
                     }
                     else if (User.IsInRole("instructor"))
                     {
-                        Console.WriteLine("instructor");
+                        Console.WriteLine("1");
                         return Redirect("~/instructor/index");
                     }
                     else
@@ -103,7 +103,7 @@ namespace ExperienceIT_Final_Project.Controllers
                 case SignInStatus.LockedOut:
                     return View("Lockout");
                 case SignInStatus.RequiresVerification:
-                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, RememberMe = model.RememberMe });
+                    return RedirectToAction("SendCode", new { ReturnUrl = returnUrl, model.RememberMe });
                 case SignInStatus.Failure:
                 default:
                     ModelState.AddModelError("", "Invalid login attempt.");
@@ -172,7 +172,7 @@ namespace ExperienceIT_Final_Project.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName, Role = model.Role};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -184,6 +184,7 @@ namespace ExperienceIT_Final_Project.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
+                  
                     return RedirectToAction("Index", "Home");
                 }
                 AddErrors(result);
@@ -335,7 +336,7 @@ namespace ExperienceIT_Final_Project.Controllers
             {
                 return View("Error");
             }
-            return RedirectToAction("VerifyCode", new { Provider = model.SelectedProvider, ReturnUrl = model.ReturnUrl, RememberMe = model.RememberMe });
+            return RedirectToAction("VerifyCode", new { Provider = model.SelectedProvider, model.ReturnUrl, model.RememberMe });
         }
 
         //

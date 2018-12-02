@@ -219,9 +219,17 @@
     <Compile Include="Migrations\201811292331218_madeCompleteAssignment.Designer.cs">
       <DependentUpon>201811292331218_madeCompleteAssignment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812010437433_loginRedirect.cs" />
-    <Compile Include="Migrations\201812010437433_loginRedirect.Designer.cs">
-      <DependentUpon>201812010437433_loginRedirect.cs</DependentUpon>
+    <Compile Include="Migrations\201812021535404_rolesToAspNetUsers.cs" />
+    <Compile Include="Migrations\201812021535404_rolesToAspNetUsers.Designer.cs">
+      <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812021733063_updateduser.cs" />
+    <Compile Include="Migrations\201812021733063_updateduser.Designer.cs">
+      <DependentUpon>201812021733063_updateduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812021747394_updateduser1.cs" />
+    <Compile Include="Migrations\201812021747394_updateduser1.Designer.cs">
+      <DependentUpon>201812021747394_updateduser1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -400,8 +408,14 @@
     <EmbeddedResource Include="Migrations\201811292331218_madeCompleteAssignment.resx">
       <DependentUpon>201811292331218_madeCompleteAssignment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812010437433_loginRedirect.resx">
-      <DependentUpon>201812010437433_loginRedirect.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812021535404_rolesToAspNetUsers.resx">
+      <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812021733063_updateduser.resx">
+      <DependentUpon>201812021733063_updateduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812021747394_updateduser1.resx">
+      <DependentUpon>201812021747394_updateduser1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

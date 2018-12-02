@@ -3,16 +3,16 @@ namespace ExperienceIT_Final_Project.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class loginRedirect : DbMigration
+    public partial class updateduser1 : DbMigration
     {
         public override void Up()
         {
-            AddColumn("dbo.Mentors", "Discriminator", c => c.String(nullable: false, maxLength: 128));
+            AddColumn("dbo.AspNetUsers", "LastAssignmentCompleted", c => c.String());
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Mentors", "Discriminator");
+            DropColumn("dbo.AspNetUsers", "LastAssignmentCompleted");
         }
     }
 }

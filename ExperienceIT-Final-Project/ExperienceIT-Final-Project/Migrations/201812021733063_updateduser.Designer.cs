@@ -7,13 +7,13 @@ namespace ExperienceIT_Final_Project.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class loginRedirect : IMigrationMetadata
+    public sealed partial class updateduser : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(loginRedirect));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updateduser));
         
         string IMigrationMetadata.Id
         {
-            get { return "201812010437433_loginRedirect"; }
+            get { return "201812021733063_updateduser"; }
         }
         
         string IMigrationMetadata.Source

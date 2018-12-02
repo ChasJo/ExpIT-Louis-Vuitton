@@ -10,12 +10,12 @@ namespace ExperienceIT_Final_Project.Migrations
             AddColumn("dbo.Assignments", "StudentID", c => c.Int());
             AddColumn("dbo.Assignments", "CompleteDate", c => c.String());
             AddColumn("dbo.Assignments", "GitLink", c => c.String());
-            AddColumn("dbo.Assignments", "Discriminator", c => c.String(nullable: false, maxLength: 128));
+            
         }
         
         public override void Down()
         {
-            DropColumn("dbo.Assignments", "Discriminator");
+           
             DropColumn("dbo.Assignments", "GitLink");
             DropColumn("dbo.Assignments", "CompleteDate");
             DropColumn("dbo.Assignments", "StudentID");

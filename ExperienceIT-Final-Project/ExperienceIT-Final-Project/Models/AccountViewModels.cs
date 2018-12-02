@@ -79,6 +79,16 @@ namespace ExperienceIT_Final_Project.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        [DataType(DataType.Text)]
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+        [DataType(DataType.Text)]
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+        [DataType(DataType.Text)]
+        [Display(Name = "Role")]
+        public string Role { get; set; }
     }
 
     public class ResetPasswordViewModel
