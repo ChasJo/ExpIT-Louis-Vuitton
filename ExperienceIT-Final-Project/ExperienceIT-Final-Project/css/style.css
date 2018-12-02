@@ -81,7 +81,7 @@
     font-size: 18px;
 }
 .nav-align{
-    padding-left: 420px
+    padding-left: 350px
 }
 .carousel-item{
     text-align: center;
@@ -97,4 +97,9 @@
     border-style: solid;
     padding: 20px;
     font-size: 20px;
+}
+#facebook-img{
+    margin-right: 60px;
+    height: 80%;
+    width: 40%;
 }
