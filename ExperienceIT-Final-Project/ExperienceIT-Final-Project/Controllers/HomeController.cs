@@ -22,7 +22,7 @@ namespace ExperienceIT_Final_Project.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "We're Glad You're Here!";
 
             return View();
         }
