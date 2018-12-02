@@ -24,7 +24,6 @@ namespace ExperienceIT_Final_Project.Controllers
 
 
         // GET: Student
-        [Authorize (Roles = "student")]
         public ActionResult Index()
         {
             var student = _context.Students;

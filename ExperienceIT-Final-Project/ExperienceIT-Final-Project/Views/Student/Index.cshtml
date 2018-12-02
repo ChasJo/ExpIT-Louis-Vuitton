@@ -4,7 +4,14 @@
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 }
 <link rel="stylesheet" href="../css/style.css" />
-<h2>Welcome @User.Identity.Name</h2>
+<h2>Welcome  
+    @foreach (var s in Model)
+    {
+        if (User.Identity.Name == s.Email)
+        { @s.FirstName;
+        }
+    }
+    </h2>
 <br />
 
 

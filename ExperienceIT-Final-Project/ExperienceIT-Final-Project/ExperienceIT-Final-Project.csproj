@@ -231,6 +231,14 @@
     <Compile Include="Migrations\201812021747394_updateduser1.Designer.cs">
       <DependentUpon>201812021747394_updateduser1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812021854376_updateduser2.cs" />
+    <Compile Include="Migrations\201812021854376_updateduser2.Designer.cs">
+      <DependentUpon>201812021854376_updateduser2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812021907046_updateduser3.cs" />
+    <Compile Include="Migrations\201812021907046_updateduser3.Designer.cs">
+      <DependentUpon>201812021907046_updateduser3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AssignmentsController.cs" />
@@ -416,6 +424,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812021747394_updateduser1.resx">
       <DependentUpon>201812021747394_updateduser1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812021854376_updateduser2.resx">
+      <DependentUpon>201812021854376_updateduser2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812021907046_updateduser3.resx">
+      <DependentUpon>201812021907046_updateduser3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

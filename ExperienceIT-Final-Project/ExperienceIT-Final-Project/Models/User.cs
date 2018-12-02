@@ -19,7 +19,7 @@ namespace ExperienceIT_Final_Project
 
         //  [Required]
         // [Display(username = "UserName")]
-        //  public string Username { get; set; }
+         public string Email { get; set; }
         //  public string Password { get; set; }
 
 
