@@ -3,7 +3,7 @@ namespace ExperienceIT_Final_Project.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class updateREquirements : DbMigration
+    public partial class reset : DbMigration
     {
         public override void Up()
         {
@@ -11,6 +11,8 @@ namespace ExperienceIT_Final_Project.Migrations
         
         public override void Down()
         {
+            
+            AddColumn("dbo.Mentors", "Discriminator", c => c.String());
         }
     }
 }

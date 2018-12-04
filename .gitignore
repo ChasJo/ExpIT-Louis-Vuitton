@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/ExperienceIT-Final-Project/ExperienceIT-Final-Project/Migrations/201812042306494_InitialMigration.resx
+/ExperienceIT-Final-Project/ExperienceIT-Final-Project/Migrations/201812042306494_InitialMigration.Designer.cs
+/ExperienceIT-Final-Project/ExperienceIT-Final-Project/Migrations/201812042306494_InitialMigration.cs

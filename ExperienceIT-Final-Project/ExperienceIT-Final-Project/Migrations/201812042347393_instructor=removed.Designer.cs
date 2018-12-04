@@ -7,13 +7,13 @@ namespace ExperienceIT_Final_Project.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class madeMentor : IMigrationMetadata
+    public sealed partial class instructorremoved : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(madeMentor));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(instructorremoved));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811272346138_madeMentor"; }
+            get { return "201812042347393_instructor=removed"; }
         }
         
         string IMigrationMetadata.Source

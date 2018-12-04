@@ -7,13 +7,13 @@ namespace ExperienceIT_Final_Project.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class madeCompleteAssignment : IMigrationMetadata
+    public sealed partial class reset : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(madeCompleteAssignment));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(reset));
         
         string IMigrationMetadata.Id
         {
-            get { return "201811292331218_madeCompleteAssignment"; }
+            get { return "201812042339598_reset"; }
         }
         
         string IMigrationMetadata.Source

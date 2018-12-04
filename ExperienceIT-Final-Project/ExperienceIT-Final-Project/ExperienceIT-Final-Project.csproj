@@ -203,25 +203,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\MentorController.cs" />
-    <Compile Include="Migrations\201811272250581_madeAssignments.cs" />
-    <Compile Include="Migrations\201811272250581_madeAssignments.Designer.cs">
-      <DependentUpon>201811272250581_madeAssignments.cs</DependentUpon>
+    <Compile Include="Migrations\201812042339598_reset.cs" />
+    <Compile Include="Migrations\201812042339598_reset.Designer.cs">
+      <DependentUpon>201812042339598_reset.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811272346138_madeMentor.cs" />
-    <Compile Include="Migrations\201811272346138_madeMentor.Designer.cs">
-      <DependentUpon>201811272346138_madeMentor.cs</DependentUpon>
+    <Compile Include="Migrations\201812042344345_instructor.cs" />
+    <Compile Include="Migrations\201812042344345_instructor.Designer.cs">
+      <DependentUpon>201812042344345_instructor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201811292331218_madeCompleteAssignment.cs" />
-    <Compile Include="Migrations\201811292331218_madeCompleteAssignment.Designer.cs">
-      <DependentUpon>201811292331218_madeCompleteAssignment.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812021535404_rolesToAspNetUsers.cs" />
-    <Compile Include="Migrations\201812021535404_rolesToAspNetUsers.Designer.cs">
-      <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812040209179_updateREquirements.cs" />
-    <Compile Include="Migrations\201812040209179_updateREquirements.Designer.cs">
-      <DependentUpon>201812040209179_updateREquirements.cs</DependentUpon>
+    <Compile Include="Migrations\201812042347393_instructor=removed.cs" />
+    <Compile Include="Migrations\201812042347393_instructor=removed.Designer.cs">
+      <DependentUpon>201812042347393_instructor=removed.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -231,18 +223,6 @@
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811272155202_InitialMigration.cs" />
-    <Compile Include="Migrations\201811272155202_InitialMigration.Designer.cs">
-      <DependentUpon>201811272155202_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811272208404_AddAssignToStudent.cs" />
-    <Compile Include="Migrations\201811272208404_AddAssignToStudent.Designer.cs">
-      <DependentUpon>201811272208404_AddAssignToStudent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201811272232330_addedAssignmentToStudent.cs" />
-    <Compile Include="Migrations\201811272232330_addedAssignmentToStudent.Designer.cs">
-      <DependentUpon>201811272232330_addedAssignmentToStudent.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -383,33 +363,18 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201811272155202_InitialMigration.resx">
-      <DependentUpon>201811272155202_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811272208404_AddAssignToStudent.resx">
-      <DependentUpon>201811272208404_AddAssignToStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811272232330_addedAssignmentToStudent.resx">
-      <DependentUpon>201811272232330_addedAssignmentToStudent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811272250581_madeAssignments.resx">
-      <DependentUpon>201811272250581_madeAssignments.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811272346138_madeMentor.resx">
-      <DependentUpon>201811272346138_madeMentor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201811292331218_madeCompleteAssignment.resx">
-      <DependentUpon>201811292331218_madeCompleteAssignment.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812021535404_rolesToAspNetUsers.resx">
-      <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812040209179_updateREquirements.resx">
-      <DependentUpon>201812040209179_updateREquirements.cs</DependentUpon>
-    </EmbeddedResource>
+    <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\index.d.ts" />
+    <EmbeddedResource Include="Migrations\201812042339598_reset.resx">
+      <DependentUpon>201812042339598_reset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812042344345_instructor.resx">
+      <DependentUpon>201812042344345_instructor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812042347393_instructor=removed.resx">
+      <DependentUpon>201812042347393_instructor=removed.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
