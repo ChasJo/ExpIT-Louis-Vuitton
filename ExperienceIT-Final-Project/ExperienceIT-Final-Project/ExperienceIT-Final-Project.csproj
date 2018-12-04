@@ -47,13 +47,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.5.1\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.13.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.13\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -204,6 +215,18 @@
     <Compile Include="Migrations\201811272346138_madeMentor.Designer.cs">
       <DependentUpon>201811272346138_madeMentor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811292331218_madeCompleteAssignment.cs" />
+    <Compile Include="Migrations\201811292331218_madeCompleteAssignment.Designer.cs">
+      <DependentUpon>201811292331218_madeCompleteAssignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812021535404_rolesToAspNetUsers.cs" />
+    <Compile Include="Migrations\201812021535404_rolesToAspNetUsers.Designer.cs">
+      <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812040209179_updateREquirements.cs" />
+    <Compile Include="Migrations\201812040209179_updateREquirements.Designer.cs">
+      <DependentUpon>201812040209179_updateREquirements.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AssignmentsController.cs" />
@@ -227,6 +250,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\CompletedAssignment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -347,9 +371,8 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Student\AllAssignments.cshtml" />
     <Content Include="Views\Shared\_LayoutStudent.cshtml" />
-    <Content Include="Views\Assignments\Index.cshtml" />
-    <Content Include="Views\Student\mentorDetails.cshtml" />
     <Content Include="Views\Student\Mentor.cshtml" />
+    <Content Include="Views\Student\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -380,6 +403,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811272346138_madeMentor.resx">
       <DependentUpon>201811272346138_madeMentor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811292331218_madeCompleteAssignment.resx">
+      <DependentUpon>201811292331218_madeCompleteAssignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812021535404_rolesToAspNetUsers.resx">
+      <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812040209179_updateREquirements.resx">
+      <DependentUpon>201812040209179_updateREquirements.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

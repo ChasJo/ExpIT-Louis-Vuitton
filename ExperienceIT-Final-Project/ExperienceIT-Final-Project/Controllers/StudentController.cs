@@ -11,7 +11,7 @@ namespace ExperienceIT_Final_Project.Controllers
     {
 
         private ApplicationDbContext _context;
-
+        
         public StudentController()
         {
             _context = new ApplicationDbContext();
@@ -26,15 +26,16 @@ namespace ExperienceIT_Final_Project.Controllers
         // GET: Student
         public ActionResult Index()
         {
-            //var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            
-            return View();
+            var student = _context.Students;
+
+            return View(student);
         }
 
         public ActionResult AllAssignments()
         {
-            // var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            return View();
+            var assignments = _context.Assignments;
+
+            return View(assignments);
         }
         public ActionResult Mentor()
         {

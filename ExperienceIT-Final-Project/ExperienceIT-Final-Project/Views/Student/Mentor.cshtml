@@ -9,14 +9,16 @@
             <tr>
                 <th>Mentor</th>
                 <th>Email</th>
+                <th>Phone</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var mentor in Model)
             {
             <tr>
-                <td>@Html.ActionLink(mentor.FirstName, "mentorDetails", "Students", new { id = mentor.Id }, null)</td>
+                <td>@mentor.FirstName @mentor.LastName</td>
                 <td>@mentor.Email</td>
+                <td>@mentor.PhoneNumber</td>
             </tr>
             }
         </tbody>

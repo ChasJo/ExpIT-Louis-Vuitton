@@ -10,18 +10,19 @@ namespace ExperienceIT_Final_Project
     {
         
         public int Id { get; set; }
-        [Display(Name = "Enter Name")]
-        public string Name{ get; set; }
-        
+      //  [Display(Name = "Enter Name")]
+        public string FirstName{ get; set; }
+        public string LastName { get; set; }
+
 
         //  public string Description { get; set; } 
 
-        [Required]
+        //  [Required]
         // [Display(username = "UserName")]
-        public string Username { get; set; }
-        public string Password { get; set; }
-        
-            
+         public string Email { get; set; }
+        //  public string Password { get; set; }
+
+
 
 
     }
