@@ -223,21 +223,9 @@
     <Compile Include="Migrations\201812021535404_rolesToAspNetUsers.Designer.cs">
       <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812021733063_updateduser.cs" />
-    <Compile Include="Migrations\201812021733063_updateduser.Designer.cs">
-      <DependentUpon>201812021733063_updateduser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812021747394_updateduser1.cs" />
-    <Compile Include="Migrations\201812021747394_updateduser1.Designer.cs">
-      <DependentUpon>201812021747394_updateduser1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812021854376_updateduser2.cs" />
-    <Compile Include="Migrations\201812021854376_updateduser2.Designer.cs">
-      <DependentUpon>201812021854376_updateduser2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812021907046_updateduser3.cs" />
-    <Compile Include="Migrations\201812021907046_updateduser3.Designer.cs">
-      <DependentUpon>201812021907046_updateduser3.cs</DependentUpon>
+    <Compile Include="Migrations\201812040209179_updateREquirements.cs" />
+    <Compile Include="Migrations\201812040209179_updateREquirements.Designer.cs">
+      <DependentUpon>201812040209179_updateREquirements.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -419,17 +407,8 @@
     <EmbeddedResource Include="Migrations\201812021535404_rolesToAspNetUsers.resx">
       <DependentUpon>201812021535404_rolesToAspNetUsers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812021733063_updateduser.resx">
-      <DependentUpon>201812021733063_updateduser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812021747394_updateduser1.resx">
-      <DependentUpon>201812021747394_updateduser1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812021854376_updateduser2.resx">
-      <DependentUpon>201812021854376_updateduser2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812021907046_updateduser3.resx">
-      <DependentUpon>201812021907046_updateduser3.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812040209179_updateREquirements.resx">
+      <DependentUpon>201812040209179_updateREquirements.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -7,13 +7,13 @@ namespace ExperienceIT_Final_Project.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class updateduser3 : IMigrationMetadata
+    public sealed partial class updateREquirements : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(updateduser3));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(updateREquirements));
         
         string IMigrationMetadata.Id
         {
-            get { return "201812021907046_updateduser3"; }
+            get { return "201812040209179_updateREquirements"; }
         }
         
         string IMigrationMetadata.Source
