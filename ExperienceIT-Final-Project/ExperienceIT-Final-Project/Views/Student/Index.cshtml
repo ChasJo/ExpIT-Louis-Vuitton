@@ -2,17 +2,29 @@
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
+
+    var assignName = "";
+    var fullname = "";
+    var lastassign = 0;
 }
-<link rel="stylesheet" href="../css/style.css" />
-<h2>Welcome  
-    @foreach (var s in Model)
+
+@foreach (var s in Model)
+{
+    if (User.Identity.Name == s.Email)
     {
-        if (User.Identity.Name == s.Email)
-        { @s.FirstName;
-        }
+        fullname = s.FirstName + " " + s.LastName;
+        lastassign = s.LastAssignment;
     }
-    </h2>
+}
+
+
+<link rel="stylesheet" href="../css/style.css" />
+<h2>
+    Welcome @fullname
+</h2>
 <br />
+
+
 
 
 <textarea class="messageOfDay" name="messageOfDay" placeholder="This will be the Message of the Day" readonly></textarea>

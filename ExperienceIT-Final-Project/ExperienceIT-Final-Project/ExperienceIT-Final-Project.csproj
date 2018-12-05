@@ -215,6 +215,10 @@
     <Compile Include="Migrations\201812042347393_instructor=removed.Designer.cs">
       <DependentUpon>201812042347393_instructor=removed.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812050001307_StudentLastassignment2int.cs" />
+    <Compile Include="Migrations\201812050001307_StudentLastassignment2int.Designer.cs">
+      <DependentUpon>201812050001307_StudentLastassignment2int.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AssignmentsController.cs" />
@@ -374,6 +378,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812042347393_instructor=removed.resx">
       <DependentUpon>201812042347393_instructor=removed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812050001307_StudentLastassignment2int.resx">
+      <DependentUpon>201812050001307_StudentLastassignment2int.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
