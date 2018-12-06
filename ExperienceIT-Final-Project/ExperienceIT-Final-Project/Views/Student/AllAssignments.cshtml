@@ -1,13 +1,16 @@
-﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Assignment>
+﻿@model ExperienceIT_Final_Project.Models.AssignmentModel
 
 @{
     ViewBag.Title = "AllAssignments";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 
-    var compare = 5;
-
+    var lastassign = Model.Student.LastAssignment;
+        
+    
 }
 
+@Model.Student.LastName
+@lastassign
 
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <script src="~/Scripts/jquery-1.10.2.js"></script>
@@ -28,13 +31,14 @@
         <tbody>
 
 
-            @foreach (var a in Model)
+           @foreach (var a in Model.AssignmentList)
             {
+               
                 <tr>
                     <td>@a.Name  </td>
                     <td>@a.Description</td>
                     <td>@a.DueDate</td>
-                    @if (a.AssignmentNumber> @compare)
+                    @if (a.AssignmentNumber <= @lastassign)
                     {
                         <td>Y</td>
                     }
