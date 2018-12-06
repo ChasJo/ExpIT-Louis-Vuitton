@@ -219,6 +219,14 @@
     <Compile Include="Migrations\201812050001307_StudentLastassignment2int.Designer.cs">
       <DependentUpon>201812050001307_StudentLastassignment2int.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812050029275_removed=completedassign.cs" />
+    <Compile Include="Migrations\201812050029275_removed=completedassign.Designer.cs">
+      <DependentUpon>201812050029275_removed=completedassign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812060536048_Added-compassignments.cs" />
+    <Compile Include="Migrations\201812060536048_Added-compassignments.Designer.cs">
+      <DependentUpon>201812060536048_Added-compassignments.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AssignmentsController.cs" />
@@ -354,6 +362,7 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Mentor\ViewStudents.cshtml" />
+    <Content Include="Views\Student\AssignDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -381,6 +390,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812050001307_StudentLastassignment2int.resx">
       <DependentUpon>201812050001307_StudentLastassignment2int.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812050029275_removed=completedassign.resx">
+      <DependentUpon>201812050029275_removed=completedassign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812060536048_Added-compassignments.resx">
+      <DependentUpon>201812060536048_Added-compassignments.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

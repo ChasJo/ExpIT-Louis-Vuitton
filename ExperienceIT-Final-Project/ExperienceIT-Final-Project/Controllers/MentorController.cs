@@ -9,7 +9,7 @@ namespace ExperienceIT_Final_Project.Controllers
 {
     public class MentorController : Controller
     {
-        private readonly object students;
+        //private readonly object students;
 
 
         // GET: Mentor

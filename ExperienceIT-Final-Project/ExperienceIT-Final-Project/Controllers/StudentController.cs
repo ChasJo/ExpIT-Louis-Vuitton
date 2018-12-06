@@ -33,8 +33,11 @@ namespace ExperienceIT_Final_Project.Controllers
 
         public ActionResult AllAssignments()
         {
+            var student = _context.Students;
             var assignments = _context.Assignments;
+            var compAssignments = _context.CompletedAssignments;
 
+            
             return View(assignments);
         }
         public ActionResult Mentor()
