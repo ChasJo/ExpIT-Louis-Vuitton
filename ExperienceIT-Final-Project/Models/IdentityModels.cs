@@ -12,7 +12,7 @@ namespace ExperienceIT_Final_Project.Models
         public string Role { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string LastAssignmentCompleted { get; set; }
+        //public string LastAssignmentCompleted { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {

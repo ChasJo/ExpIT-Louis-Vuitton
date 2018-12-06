@@ -203,22 +203,11 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\MentorController.cs" />
-    <Compile Include="Migrations\201812042339598_reset.cs" />
-    <Compile Include="Migrations\201812042339598_reset.Designer.cs">
-      <DependentUpon>201812042339598_reset.cs</DependentUpon>
+    <Compile Include="Migrations\201812061844324_initial.cs" />
+    <Compile Include="Migrations\201812061844324_initial.Designer.cs">
+      <DependentUpon>201812061844324_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812042344345_instructor.cs" />
-    <Compile Include="Migrations\201812042344345_instructor.Designer.cs">
-      <DependentUpon>201812042344345_instructor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812042347393_instructor=removed.cs" />
-    <Compile Include="Migrations\201812042347393_instructor=removed.Designer.cs">
-      <DependentUpon>201812042347393_instructor=removed.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812050001307_StudentLastassignment2int.cs" />
-    <Compile Include="Migrations\201812050001307_StudentLastassignment2int.Designer.cs">
-      <DependentUpon>201812050001307_StudentLastassignment2int.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AssignmentsController.cs" />
@@ -228,7 +217,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\CompletedAssignment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -371,17 +359,8 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812042339598_reset.resx">
-      <DependentUpon>201812042339598_reset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812042344345_instructor.resx">
-      <DependentUpon>201812042344345_instructor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812042347393_instructor=removed.resx">
-      <DependentUpon>201812042347393_instructor=removed.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812050001307_StudentLastassignment2int.resx">
-      <DependentUpon>201812050001307_StudentLastassignment2int.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812061844324_initial.resx">
+      <DependentUpon>201812061844324_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
