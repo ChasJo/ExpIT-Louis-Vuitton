@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Assignment>
+@{
+    ViewBag.Title = "AllAssignments";
+    Layout = "~/Views/Shared/_LayoutStudent.cshtml";
+
+}
+
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+
+<div class="block">
+    <label>Uncompleted Assignments</label>
+    <br />
+    <textarea id="UnAssignments">
+</textarea>
+</div>
+<div class="block">
+    <label>Set Assignment as Complete</label>
+    <br />
+    <button id="completeButton">Complete =></button>
+    <br />
+    <label>Uncomplete Assignment</label>
+    <br />
+    <button id="uncompleteButton">Uncomplete <= </button>
+</div>
+<div class="block">
+    <label>Completed Assignments</label>
+    <br>
+    <textarea id="ComAssignments"></textarea>
+</div>
