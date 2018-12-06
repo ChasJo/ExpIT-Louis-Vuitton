@@ -1,0 +1,28 @@
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Mentor>
+@{
+    ViewBag.Title = "Mentor";
+    Layout = "~/Views/Shared/_LayoutStudent.cshtml";
+}
+<h2>Mentors</h2>
+ <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Mentor</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var mentor in Model)
+            {
+            <tr>
+                <td>@mentor.FirstName @mentor.LastName</td>
+                <td>@mentor.Email</td>
+                <td>@mentor.PhoneNumber</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+
+
