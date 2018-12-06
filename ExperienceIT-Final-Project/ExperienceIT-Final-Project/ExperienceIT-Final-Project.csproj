@@ -227,6 +227,10 @@
     <Compile Include="Migrations\201812060536048_Added-compassignments.Designer.cs">
       <DependentUpon>201812060536048_Added-compassignments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812062139338_UpdateAssignment.cs" />
+    <Compile Include="Migrations\201812062139338_UpdateAssignment.Designer.cs">
+      <DependentUpon>201812062139338_UpdateAssignment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Assignment.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AssignmentsController.cs" />
@@ -396,6 +400,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812060536048_Added-compassignments.resx">
       <DependentUpon>201812060536048_Added-compassignments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812062139338_UpdateAssignment.resx">
+      <DependentUpon>201812062139338_UpdateAssignment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

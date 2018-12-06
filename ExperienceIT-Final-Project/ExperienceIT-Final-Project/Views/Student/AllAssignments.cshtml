@@ -4,20 +4,26 @@
     ViewBag.Title = "AllAssignments";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 
+    var compare = 5;
+
 }
+
 
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <script src="~/Scripts/jquery-1.10.2.js"></script>
 <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
 
 <div>
-    <label>Uncompleted Assignments</label>
+  
     <br />
 
-    <table id="UncompleteAssignments" class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover">
         <thead>
             <tr>
                 <th>Assignment</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                <th>Completed?</th>
         </thead>
         <tbody>
 
@@ -25,8 +31,19 @@
             @foreach (var a in Model)
             {
                 <tr>
-                    <td>@Html.ActionLink(a.Name, "Details", "Student", new { id = a.Id }, null)</td>
-                   
+                    <td>@a.Name  </td>
+                    <td>@a.Description</td>
+                    <td>@a.DueDate</td>
+                    @if (a.AssignmentNumber> @compare)
+                    {
+                        <td>Y</td>
+                    }
+                    else
+                    {
+                        <td>N</td>
+                    }
+
+
                 </tr>
             }
         </tbody>

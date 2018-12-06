@@ -31,7 +31,7 @@ namespace ExperienceIT_Final_Project.Controllers
             return View(student);
         }
 
-        public ActionResult AllAssignments()
+        public ActionResult AllAssignments(int)
         {
             var student = _context.Students;
             var assignments = _context.Assignments;

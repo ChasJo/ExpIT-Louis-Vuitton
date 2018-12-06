@@ -43,20 +43,20 @@
         <br />
         <label>Progress Indicator</label>
 
-       @if (assignDue == lastassign)
-       {
-        <label>current</label>
-        <div class="color-box-current"></div>
-       }
-        else if ((assignDue - lastassign) < 2)
+        @if (assignDue == lastassign)
         {
-            <label>close</label>
-            <div class="color-box-close"></div>
+            <label>current</label>
+            <div class="color-box-current"></div>
         }
         else if (assignDue < lastassign)
         {
-            <label>ahead</label>
-            <div class="color-box-ahead"></div>
+        <label>ahead</label>
+        <div class="color-box-ahead"></div>
+        }
+        else if ((assignDue - lastassign) < 2)
+        {
+        <label>close</label>
+        <div class="color-box-close"></div>
         }
         else
         {
