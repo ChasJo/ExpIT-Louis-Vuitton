@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="container2">
+    <div style="padding: 20px">
+        <strong>ExperienceIT</strong><br />
+        Woodward Cooridor<br />
+        Downtown Detroit, MI 48226<br />
+        <strong>Email:</strong> <a href="mailto:ExperienceITDetroit@gmail.com">ExperienceITDetroit@gmail.com</a><br />
+
+        <a href="https://www.youtube.com/watch?v=m24pG-FWQbU" alt="YouTube"> <img src="~/img/YoutubeLogo.png" width="62" height="47" /></a>
+        <a href="https://www.facebook.com/ExperienceITDetroit?ref=hl" alt="Facebook"> <img src="~/img/facebook.jpeg" width="60" /></a>
+        <a href="https://twitter.com/experienceitdet" alt="Twitter"> <img src="~/img/twitter.jpg" /></a>
+    </div>
+    <div style="padding: 20px">
+        <form action="/action.php" method="post">
+            Name: <input name="name" type="text" style="margin-left: 15px"/> <br/>
+            <br/>
+            Email: <input type="text" style="margin-left: 20px"required="" aria-invalid="false" name="Email" placeholder="Email" data-aid="emailField" value=""><br />
+            <br/>
+            <textarea cols="100" name="comments" rows="5">Comment</textarea><br />
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+</div>

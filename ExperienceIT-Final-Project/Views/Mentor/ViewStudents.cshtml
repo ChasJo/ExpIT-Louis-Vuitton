@@ -1,0 +1,31 @@
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Student>
+@{
+    ViewBag.Title = "Students Progress";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Students Progress</h1>
+<link href="/css/StyleSheetstudentprogress.css" rel="stylesheet">
+<div>
+<textarea class="messageOfDay" name="messageOfDay"
+          placeholder="This will be the Message of the Day" readonly></textarea>
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.FirstName</td>
+                    <td>@student.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
