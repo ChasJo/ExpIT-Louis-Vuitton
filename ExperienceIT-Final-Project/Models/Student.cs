@@ -10,6 +10,13 @@ namespace ExperienceIT_Final_Project.Models
     {
         public int LastAssignment { get; set; }
 
+        public String AllAssignments { get; set; }
+
+        public String OngoingAssignments { get; set; }
+
+        public String OntimeAssignments { get; set; }
+
+        public String LateAssignments { get; set; }
 
         public List<Assignment> assignmentList = new List<Assignment>();
 
