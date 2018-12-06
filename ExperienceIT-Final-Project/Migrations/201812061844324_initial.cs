@@ -3,16 +3,16 @@ namespace ExperienceIT_Final_Project.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class StudentLastassignment2int : DbMigration
+    public partial class initial : DbMigration
     {
         public override void Up()
         {
-            AlterColumn("dbo.Students", "LastAssignment", c => c.Int(nullable: false));
+            DropColumn("dbo.AspNetUsers", "LastAssignmentCompleted");
         }
         
         public override void Down()
         {
-            AlterColumn("dbo.Students", "LastAssignment", c => c.Int());
+            AddColumn("dbo.AspNetUsers", "LastAssignmentCompleted", c => c.String());
         }
     }
 }

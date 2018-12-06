@@ -15,16 +15,20 @@
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Email</th>
+                <th>Ongoing Assignments</th>
+                <th>Ontime Finished Assignments</th>
+                <th>Late Assignments</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var student in Model)
             {
-                <tr>
-                    <td>@student.FirstName</td>
-                    <td>@student.Email</td>
-                </tr>
+            <tr>
+                <td>@student.FirstName</td>
+                <td>@student.OngoingAssignments</td>
+                <td>@student.OntimeAssignments</td>
+                <td>@student.LateAssignments</td>
+            </tr>
             }
         </tbody>
     </table>
