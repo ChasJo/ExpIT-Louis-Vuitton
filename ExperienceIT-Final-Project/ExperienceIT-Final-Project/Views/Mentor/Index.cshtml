@@ -1,50 +1,52 @@
-﻿
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Student>
 @{
     ViewBag.Title = "Students Progress";
     Layout = "~/Views/Shared/_Layout.cshtml";
-}
 
+    var assignDue = 5;
+}
 
 
 
 <h1>Students Progress</h1>
 <link href="/css/StyleSheetstudentprogress.css" rel="stylesheet">
-
 <div>
 <textarea class="messageOfDay" name="messageOfDay"
           placeholder="This will be the Message of the Day" readonly></textarea>
-
-
-
-    <table style="width:100%">
-
-
-
-        <tr>
-            <th>List Of Students</th>
-            <th>Behind</th>
-            <th>Current</th>
-            <th> Ahead</th>
-
-        </tr>
-        <tr>
-            <td>student1</td>
-            <td>Assignment1</td>
-            <td>Assignment2></td>
-            <td>Assignment3</td>
-
-
-        </tr>
-        <tr>
-            <td>student2</td>
-            <td>Assignment1</td>
-            <td>Assignment2></td>
-            <td>Assignment3</td>
-
-
-
-
-        </tr>
-    </table>
 </div>
+<div class="block">
+    Students Behind:
+    <br />
+    @foreach (var s in Model)
+    {
+        if (s.LastAssignment < assignDue)
+        {
+            @s.FirstName @s.LastName
+        }
+    }
+</div>
+<div class="block">
+    Students Current:
+    <br />
+    @foreach (var s in Model)
+    {
+        if (s.LastAssignment == assignDue)
+        {
+            @s.FirstName @s.LastName
+        }
+    }
+</div>
+<div class="block">
+    Students Ahead:
+    <br />
+    @foreach (var s in Model)
+    {
+        if (s.LastAssignment > assignDue)
+        {
+            @s.FirstName @s.LastName
+        }
+    }
+</div>
+
+
 
