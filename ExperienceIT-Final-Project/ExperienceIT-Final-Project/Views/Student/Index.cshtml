@@ -3,9 +3,9 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 
-    var assignName = "";
     var fullname = "";
     var lastassign = 0;
+    var assignDue = 5;
 }
 
 @foreach (var s in Model)
@@ -33,15 +33,37 @@
 <form class="student-form">
     <div>
         <label>Last Assignment Completed</label>
-        <textarea placeholder="this will list the last assignment completed"></textarea>
+        <textarea placeholder="this will list the last assignment completed">@lastassign</textarea>
         <br />
         <label> Current Assignment</label>
-        <textarea placeholder="This will list the current assignment"></textarea>
+        <textarea placeholder="This will list the current assignment">@(lastassign + 1)</textarea>
         <br />
         <label>Assignment Due</label>
-        <textarea placeholder="this will show the due date"></textarea>
+        <textarea placeholder="this will show the due date">@assignDue</textarea>
         <br />
         <label>Progress Indicator</label>
-        <div class="color-box"></div>
+
+        @if (assignDue == lastassign)
+        {
+            <label>current</label>
+            <div class="color-box-current"></div>
+        }
+        else if (assignDue < lastassign)
+        {
+        <label>ahead</label>
+        <div class="color-box-ahead"></div>
+        }
+        else if ((assignDue - lastassign) < 2)
+        {
+        <label>close</label>
+        <div class="color-box-close"></div>
+        }
+        else
+        {
+        <label>behind</label>
+        <div class="color-box-behind"></div>
+        }
+
+
     </div>
 </form>

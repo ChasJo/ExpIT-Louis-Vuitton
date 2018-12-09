@@ -33,9 +33,16 @@ namespace ExperienceIT_Final_Project.Controllers
 
         public ActionResult AllAssignments()
         {
-            var assignments = _context.Assignments;
+            var model = new AssignmentModel
+            {
+                AssignmentList = _context.Assignments.ToList(),
+                Student = _context.Students.Where(x => x.Email == User.Identity.Name).First()
+            };
 
-            return View(assignments);
+            var compAssignments = _context.CompletedAssignments;
+
+            
+            return View(model);
         }
         public ActionResult Mentor()
         {

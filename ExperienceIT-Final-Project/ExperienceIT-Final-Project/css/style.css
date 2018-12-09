@@ -12,11 +12,29 @@
     width:50%;
     height: 100px;
 }
-.color-box {
+.color-box-ahead {
     width: 100px;
     height: 100px;
-    position: relative;
-    background-color:green;
+    background-color: blue;
+    border: dashed;
+}
+.color-box-behind {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border:dashed;
+}
+.color-box-close {
+    width: 100px;
+    height: 100px;
+    background-color: yellow ;
+    border:dashed;
+}
+.color-box-current {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border: dashed;
 }
 .student-form {
     padding: 20px; padding-bottom: 15px
@@ -44,20 +62,6 @@
 #UncompletedAssignments {
     float: left;
     width: 33%;
-}
-
-#UnAssignments {
-    height:500px;
-    width:100%;
-}
-
-#CompletedAssignments {
-    float: Right;
-    width: 33%;
-}
-
-#ComAssignments {
-    height: 500px;
 }
 
 .p-box {

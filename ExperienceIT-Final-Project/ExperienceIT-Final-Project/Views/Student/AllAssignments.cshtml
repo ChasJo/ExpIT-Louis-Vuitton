@@ -1,31 +1,55 @@
-﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Assignment>
+﻿@model ExperienceIT_Final_Project.Models.AssignmentModel
+
 @{
     ViewBag.Title = "AllAssignments";
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 
+    var lastassign = Model.Student.LastAssignment;
+        
+    
 }
 
+@Model.Student.LastName
+@lastassign
+
 <link rel="stylesheet" type="text/css" href="../css/style.css">
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+
+<div>
+  
+    <br />
+
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Assignment</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                <th>Completed?</th>
+        </thead>
+        <tbody>
 
 
+           @foreach (var a in Model.AssignmentList)
+            {
+               
+                <tr>
+                    <td>@a.Name  </td>
+                    <td>@a.Description</td>
+                    <td>@a.DueDate</td>
+                    @if (a.AssignmentNumber <= @lastassign)
+                    {
+                        <td>Y</td>
+                    }
+                    else
+                    {
+                        <td>N</td>
+                    }
 
-<div class="block">
-    <label>Uncompleted Assignments</label>
-    <br />
-    <textarea id="UnAssignments">
-</textarea>
-</div>
-<div class="block">
-    <label>Set Assignment as Complete</label>
-    <br />
-    <button id="completeButton">Complete =></button>
-    <br />
-    <label>Uncomplete Assignment</label>
-    <br />
-    <button id="uncompleteButton">Uncomplete <= </button>
-</div>
-<div class="block">
-    <label>Completed Assignments</label>
-    <br>
-    <textarea id="ComAssignments"></textarea>
+
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>

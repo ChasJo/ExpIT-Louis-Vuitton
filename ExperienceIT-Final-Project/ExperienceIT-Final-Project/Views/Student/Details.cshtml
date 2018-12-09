@@ -1,0 +1,10 @@
+﻿@model ExperienceIT_Final_Project.Models.Assignment
+
+<h2>@Model.Name</h2>
+<ul>
+    <li>Assignment Number: @Model.Id</li>
+    <li>Assignment Description: @Model.Description</li>
+    <li>Due Date : @Model.DueDate</li>
+
+</ul>
+@Html.ActionLink("Submit Assignments", "New", "Customers", null, new { @class = "btn btn-primary" })
