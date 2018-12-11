@@ -27,6 +27,14 @@ namespace ExperienceIT_Final_Project.Controllers
         // GET: Mentor
         public ActionResult Index()
         {
+            /*
+            var model = new AssignmentModel
+            {
+                AssignmentList = _context.Assignments.ToList(),
+                Student = _context.Students.Where(x => x.Email == User.Identity.Name).First()
+            };
+            return View(model);
+            */
             var student = _context.Students;
             return View(student);
         }

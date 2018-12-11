@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Student>
+
 @{
     ViewBag.Title = "Students Progress";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -21,19 +22,21 @@
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>Students Behind:</th>
+                <th>Students Behind:</th> 
+                <th>Last Assignment Completed</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var s in Model)
             {
                 fullname = s.FirstName + " " + s.LastName;
-                <tr>
-                    @if (s.LastAssignment < assignDue)
-                    {
-                        <td>@fullname  </td>
-                    }
-                </tr>
+            <tr>
+                @if (s.LastAssignment < assignDue)
+                {
+                    <td>@fullname  </td>
+                    <td>@s.LastAssignment</td>
+                }
+            </tr>
             }
         </tbody>
     </table>
@@ -41,6 +44,7 @@
         <thead>
             <tr>
                 <th>Students Current</th>
+                <th>Last Assignment Completed</th>
             </tr>
         </thead>
         <tbody>
@@ -51,6 +55,7 @@
                     @if (s.LastAssignment == assignDue)
                     {
                         <td>@fullname</td>
+                        <td>@s.LastAssignment</td>
                     }
                 </tr>
             }
@@ -59,19 +64,21 @@
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>Stuents Ahead</th>
+                <th>Students   Ahead</th> 
+                <th>Last Assignment Completed</th>
             </tr>
         </thead>
         <tbody>
             @foreach (var s in Model)
             {
                 fullname = s.FirstName + " " + s.LastName;
-                <tr>
-                    @if (s.LastAssignment > assignDue)
-                    {
-                        <td>@fullname</td>
-                    }
-                </tr>
+            <tr>
+                @if (s.LastAssignment > assignDue)
+                {
+                    <td>@fullname</td>
+                    <td>@s.LastAssignment</td>
+                }
+            </tr>
             }
         </tbody>
     </table>
