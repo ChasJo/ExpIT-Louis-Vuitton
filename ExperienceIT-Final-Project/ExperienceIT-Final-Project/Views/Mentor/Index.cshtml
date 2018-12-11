@@ -1,50 +1,79 @@
-﻿
+﻿@model IEnumerable<ExperienceIT_Final_Project.Models.Student>
 @{
     ViewBag.Title = "Students Progress";
     Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var assignDue = 5;
+    var fullname = "";
 }
-
-
 
 
 <h1>Students Progress</h1>
 <link href="/css/StyleSheetstudentprogress.css" rel="stylesheet">
-
 <div>
 <textarea class="messageOfDay" name="messageOfDay"
           placeholder="This will be the Message of the Day" readonly></textarea>
+</div>
 
 
 
-    <table style="width:100%">
-
-
-
-        <tr>
-            <th>List Of Students</th>
-            <th>Behind</th>
-            <th>Current</th>
-            <th> Ahead</th>
-
-        </tr>
-        <tr>
-            <td>student1</td>
-            <td>Assignment1</td>
-            <td>Assignment2></td>
-            <td>Assignment3</td>
-
-
-        </tr>
-        <tr>
-            <td>student2</td>
-            <td>Assignment1</td>
-            <td>Assignment2></td>
-            <td>Assignment3</td>
-
-
-
-
-        </tr>
+<div>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Students Behind:</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model)
+            {
+                fullname = s.FirstName + " " + s.LastName;
+                <tr>
+                    @if (s.LastAssignment < assignDue)
+                    {
+                        <td>@fullname  </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Students Current</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model)
+            {
+                fullname = s.FirstName + " " + s.LastName;
+                <tr>
+                    @if (s.LastAssignment == assignDue)
+                    {
+                        <td>@fullname</td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Stuents Ahead</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model)
+            {
+                fullname = s.FirstName + " " + s.LastName;
+                <tr>
+                    @if (s.LastAssignment > assignDue)
+                    {
+                        <td>@fullname</td>
+                    }
+                </tr>
+            }
+        </tbody>
     </table>
 </div>
 

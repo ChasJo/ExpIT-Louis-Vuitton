@@ -17,11 +17,6 @@ namespace ExperienceIT_Final_Project.Models
             
         }
 
-        public void Submitassignment(ApplicationDbContext competed)
-        {
-
-        }
-        
 
      
     }

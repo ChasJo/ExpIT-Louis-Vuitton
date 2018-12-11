@@ -5,19 +5,15 @@
     Layout = "~/Views/Shared/_LayoutStudent.cshtml";
 
     var lastassign = Model.Student.LastAssignment;
-        
-    
+
+
 }
 
-@Model.Student.LastName
-@lastassign
+<!--2Model.Student.LastName 2lastassign-->
 
-<link rel="stylesheet" type="text/css" href="../css/style.css">
-<script src="~/Scripts/jquery-1.10.2.js"></script>
-<script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
 
 <div>
-  
+
     <br />
 
     <table class="table table-bordered table-hover">
@@ -31,19 +27,22 @@
         <tbody>
 
 
-           @foreach (var a in Model.AssignmentList)
+            @foreach (var a in Model.AssignmentList)
             {
-               
+
                 <tr>
-                    <td>@a.Name  </td>
-                    <td>@a.Description</td>
-                    <td>@a.DueDate</td>
                     @if (a.AssignmentNumber <= @lastassign)
                     {
+                        <td>@a.Name</td>
+                        <td>@a.Description</td>
+                        <td>@a.DueDate</td>
                         <td>Y</td>
                     }
                     else
                     {
+                        <td>@Html.ActionLink(a.Name, "Details", "Student", new { id = a.Id }, null)</td>
+                        <td>@a.Description</td>
+                        <td>@a.DueDate</td>
                         <td>N</td>
                     }
 

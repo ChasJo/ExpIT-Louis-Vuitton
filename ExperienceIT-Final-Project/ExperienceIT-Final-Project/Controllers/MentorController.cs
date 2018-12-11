@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExperienceIT_Final_Project.Models;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,19 +12,24 @@ namespace ExperienceIT_Final_Project.Controllers
     {
         //private readonly object students;
 
+        private ApplicationDbContext _context;
+        //private readonly object students;
+        public MentorController()
+        {
+            _context = new ApplicationDbContext();
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            _context.Dispose();
+        }
 
         // GET: Mentor
         public ActionResult Index()
         {
-            // return View(students Progress<>);
-            return View();
+            var student = _context.Students;
+            return View(student);
         }
-
-        public ActionResult ViewStudents()
-        {
-            return View();
-        }
-
 
 
     }

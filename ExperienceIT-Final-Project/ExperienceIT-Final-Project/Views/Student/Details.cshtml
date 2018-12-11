@@ -7,4 +7,13 @@
     <li>Due Date : @Model.DueDate</li>
 
 </ul>
-@Html.ActionLink("Submit Assignments", "New", "Customers", null, new { @class = "btn btn-primary" })
+@using (Html.BeginForm("Save", "Student"))
+{
+    <button type="submit" class="btn btn-primary">Complete Assignment</button>
+}
+<!--2Html.ActionLink("Submit Assignments", "AllAssignments", "Student", null, new { 2class = "btn btn-primary" }) -->
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
