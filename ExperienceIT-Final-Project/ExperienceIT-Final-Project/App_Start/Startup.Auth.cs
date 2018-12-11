@@ -58,11 +58,10 @@ namespace ExperienceIT_Final_Project
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(
+                clientId: "271090725875-djoadct38nujmvupqm9c1fchj89m39va.apps.googleusercontent.com",
+                clientSecret: "aokuNzyvIx7njNDIwX92QUcE"
+                );
         }
     }
 }
